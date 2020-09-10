@@ -16,6 +16,8 @@ public class Home {
     
     private JFrame frame;
     private JButton Home, StdReg, TeachReg, Program, Exam;
+    private JLabel H1, H2, H3, Paragraph, Contact, Email;
+    
     
  
    public Home(){
@@ -23,6 +25,7 @@ public class Home {
        frame = new JFrame("Home Page");
        
        HomeGUI();
+       rightBar();
        
        frame.setSize(1400,800);
        frame.setLayout(null);
@@ -55,8 +58,26 @@ public class Home {
        Exam.setBounds(20,330,150,50);
        sideBar.add(Exam);
        
+       JPanel rightBar = new JPanel();
+       rightBar.setBackground(Color.gray);
+       rightBar.setBounds(220,0,0,0);
+       frame.add(rightBar);
+       rightBar.setSize(1200,800);
+       rightBar.setLayout(null);
+       rightBar.setVisible(true);
+       
        sideBar.setLayout(null);
        sideBar.setVisible(true);
+   }
+   public void rightBar(){
+       
+       
+   }
+   public void SchoolDetails(){
+       
+       H1 = new JLabel("Welcome");
+       H1.setBounds(40,23,43,54);
+       
    }
    public static void main(String[] args) {
         new Home();
