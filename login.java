@@ -60,13 +60,14 @@ public class login {
         GUI.add(Submit);
         
         JPanel footer=new JPanel();
-        footer.setBounds(0,650,300,300);
+        footer.setBounds(0,700,300,300);
         frame.add(footer);
         footer.setBackground(Color.gray);
-        footer.setSize(700,50);
+        footer.setSize(1400,50);
         
         footertxt = new JLabel("Copyright 2020 by BasyalTech");
         footertxt.setFont(new Font("Arial",Font.PLAIN,12)); 
+       // footertxt.setBounds(500,70,300,10);
         footer.add(footertxt);
         
         GUI.setLayout(null);
